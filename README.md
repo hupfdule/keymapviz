@@ -3,6 +3,28 @@
 [![Python Version](https://img.shields.io/badge/Python-3.x-blue.svg)](PythonVersion)
 [![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 
+## Changes to upstream
+
+This is not the upstream source. It's a fork to fix some bugs and introduce some functionality that is not
+incorporated into upstream yet. If you are searching for the non-patched
+upstream see http://github.com/yskoht/keymapviz.
+
+The following PRs are integrated in this fork:
+
+ - [Add support for Keyboardio Model01 and Model100](https://github.com/yskoht/keymapviz/pull/90)
+ - [Fix stripping of enclosing parentheses](https://github.com/yskoht/keymapviz/pull/92)
+ - [Correctly handle metadata in JSON templates](https://github.com/yskoht/keymapviz/pull/94)
+ - [Some clearer explanations in README](https://github.com/yskoht/keymapviz/pull/95)
+
+To install this fork it is easiest to use pipx:
+
+```sh
+$ pipx install git+https://github.com/hupfdule/keymapviz
+```
+
+
+## Original README
+
 Keymapviz can convert keymap.c in [qmk_firmware](https://github.com/qmk/qmk_firmware)
 and .ino files in [Kaleidoscope](https://github.com/keyboardio/Kaleidoscope) to ascii art or json file.
 
